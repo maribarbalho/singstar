@@ -2,7 +2,7 @@
 
 
 Grupo A3 - SINGSTAR 
-Tema - Karaokê
+Tema - Karaokê 
 Tela inicial - Login 
 
 821234867 - Andrei tonacio ferreira
@@ -13,3 +13,11 @@ Tela inicial - Login
 821240684 - Rafael Colbachini
 822152502 - Weslley Filipe
 
+
+
+
+
+
+
+
+Retirei os node_modules, antes de executar rodar npm install e em seguida npm start.
