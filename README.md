@@ -1,8 +1,8 @@
 
 
 
-Grupo A3 - SINGSTAR 
-Tema - Karaokê
+Grupo A3 - SINGSTAR \n
+Tema - Karaokê \n
 Tela inicial - Login 
 
 821234867 - Andrei tonacio ferreira
