@@ -2,6 +2,7 @@ import React from 'react';
 import BarraPesquisa from './BarraPesquisa';
 import './BarraPesquisa.css';
 import './App.css';
+import Header from './components/header.js';
 
 function App() {
   const handleSearch = (term) => {
@@ -10,7 +11,8 @@ function App() {
   };
 
   return (
-      <div className='app-header'>
+      <div>
+        <Header />
          <div className='barra-container'>
             <h1>O que você gostaria de cantar?</h1>
             <div className='barra-pesquisa'>
