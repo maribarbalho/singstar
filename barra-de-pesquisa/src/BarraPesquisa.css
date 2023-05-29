@@ -1,0 +1,39 @@
+.barra-pesquisa{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    
+}
+
+
+.barra-pesquisa label{
+    margin-bottom: 10px;
+}
+
+.barra-pesquisa input[type="text"] {
+    width: 550px; 
+    flex: 1;
+    border-radius: 15px;
+}
+
+.barra-pesquisa button{
+   flex: 1;
+   border-radius: 15px;
+}
+
+.barra-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('assets/fundo.jpeg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  h1{
+    color: whitesmoke;
+    text-decoration: solid black;
+  }
