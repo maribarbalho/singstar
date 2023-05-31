@@ -26,3 +26,5 @@ Tela inicial - Login
 
 
 Antes de executar rodar npm install e em seguida npm start.
+
+Link do projeto no YouTube: https://youtu.be/5pVnnhOZZqk
