@@ -17,12 +17,16 @@ header{
     border: 0px solid #130f0f;
 }
 
-/*.menu{
+.menu{
     margin-right: 30px;
     border: 0px solid #ccc;
 }
+.menu img{
+    height: 35px;
+    border: 0px solid #130f0f;
+}
 
-menu ul{
+/*menu ul{
     display: flex;
 }
 
