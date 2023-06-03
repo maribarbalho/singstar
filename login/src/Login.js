@@ -13,7 +13,7 @@ import "./index.css";
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:4000'
+  baseURL: 'http://localhost:4002'
 })
 
 class Login extends React.Component{
@@ -21,39 +21,22 @@ class Login extends React.Component{
   constructor(props){
     super(props)
     this.state = {
-        nome: null,
         email: null,
         senha: null,
         mensagem_de_erro: null
     }
   }
-  state = {
-    nome: null,
-    email: null,
-    senha: null,
-    mensagem_de_erro: null
-  }
   handleChange = (event) => {
     this.setState({[event.target.name]: event.target.value});
-    this.setState({[event.target.email]: event.target.value});
-    this.setState({[event.target.senha]: event.target.value});
   }
   
-    
-  
-
-  onClickHandler = () => {
-    const navigate = useNavigate()
-    navigate(`../../cadastro/src/index.js`)
-  }
   handleSubmit = (event) => {
+    alert('Login realizado com sucesso!');
+    // alert('A form was submitted: ' + JSON.stringify(this.state));
 
-    alert('A form was submitted: ' + JSON.stringify(this.state));
-
-    const db_request = api.post('/login', JSON.stringify(this.state) ).then((response) => console.log(response))
+    const login = api.post('/login', JSON.stringify(this.state) ).then((response) => console.log(response))
     .catch((error) => console.log(error));
 
-    console.log(db_request);
     event.preventDefault();
     
   }
@@ -101,7 +84,7 @@ class Login extends React.Component{
 
               <div className="text-center">
                 <span className="txt1">Não possui conta? </span>
-                <a href="http://localhost:3001/cadastro">Cadastre aqui.</a>
+                <a href="http://localhost:3001/">Cadastre aqui.</a>
                 {/* <div>
                   <Link to="/insert/your/path/here" className="btn btn-primary">
                     Criar conta

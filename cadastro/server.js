@@ -11,8 +11,8 @@ const { v4: uuidv4 } = require('uuid');
 
 const connection = mysql.createConnection({
     host: 'localhost',
-    user: 'root',
-    password: 'password',
+    user: 'giovanna',
+    password: 'Banana&Avela77',
     database: 'singstar'
 });
 

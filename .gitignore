@@ -1,4 +1,4 @@
-./barra-de-pesquisa/node-modules
-./cadastro/node-modules
-./login/node-modules
-./principal/node-modules
+/barra-de-pesquisa/node-modules
+/cadastro/node-modules
+/login/node-modules
+/principal/node-modules

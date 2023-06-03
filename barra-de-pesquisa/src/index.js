@@ -1,17 +1,19 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import BarraPesquisa from './BarraPesquisa';
+import './BarraPesquisa.css';
+import './App.css';
+import ReactDOM from "react-dom"
+import { useNavigate, BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+function App() {
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+  return (
+    <Router>
+      <Routes>
+        <Route exact path="/" element={<BarraPesquisa/>}/>
+      </Routes>
+    </Router>  
+  );
+}
+
+ReactDOM.render(<App/>,document.querySelector("#root"))

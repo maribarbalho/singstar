@@ -20,8 +20,7 @@ class App extends React.Component{
     return(
       <Router>
         <Routes>
-          <Route exact path="/" />
-          <Route exact path='/cadastro' element={<Cadastro/>}/>
+          <Route exact path='/' element={<Cadastro/>}/>
         </Routes>
       </Router>  
     )

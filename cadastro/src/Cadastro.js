@@ -21,20 +21,13 @@ class Cadastro extends React.Component{
         mensagem_de_erro: null
     }
   }
-  state = {
-    nome: null,
-    email: null,
-    senha: null,
-    mensagem_de_erro: null
-  }
   handleChange = (event) => {
     this.setState({[event.target.name]: event.target.value});
-    this.setState({[event.target.email]: event.target.value});
-    this.setState({[event.target.senha]: event.target.value});
   }
   handleSubmit = (event) => {
 
-    alert('A form was submitted: ' + JSON.stringify(this.state));
+    // alert('A form was submitted: ' + JSON.stringify(this.state));
+    alert('Cadastro realizado com sucesso!');
 
     const db_request = api.post('/cadastro', JSON.stringify(this.state) ).then((response) => console.log(response))
     .catch((error) => console.log(error));
@@ -97,7 +90,7 @@ class Cadastro extends React.Component{
 
               <div className="text-center">
                 <span className="txt1">Já possui conta? </span>
-                <Link className="txt2" to="http://localhost:3000/login">
+                <Link className="txt2" to="http://localhost:4001/">
                   Acessar com Email e Senha.
                 </Link>
               </div>

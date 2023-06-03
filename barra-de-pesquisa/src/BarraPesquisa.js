@@ -1,48 +1,71 @@
 import React, { useState } from 'react';
 import './BarraPesquisa.css';
 import axios from 'axios';
+import './App.css';
+import Header from './components/Header.js';
+class BarraPesquisa extends React.Component{
+
+  constructor(props){
+    super(props)
+    this.state = {
+      pesquisa: null
+    }
+  }
 
 
-const BarraPesquisa = ({ onSearch }) => {
-  this.state.searchTerm = "";
   // this.state = {
   //   searchTerm: null
   // }
 
-  const handleChange = (event) => {
-    this.setState({[event.target.texto]: event.target.value});
+  handleChange = (event) => {
+    this.setState({[event.target.name]: event.target.value});
   };
 
-  const token = "9wVPPGqdUt6LoZeuVEvci5hrEzKQjdj4EQTTBW9-zjWi3GKp4bCW26aByLytH4MG"
-  const handleSubmit = (event) => {
-    console.log(this.state.searchTerm)
-    const db_request = axios.post('http://api.genius.com/search?q=', 
-    JSON.stringify(this.state.searchTerm),
-    {
-      headers: {
-        'Authorization': `Bearer ${token}` 
-      }
-    } ).then((response) => console.log(response))
-    .catch((error) => console.log(error));
+  
+  handleSubmit = (event) => {
+    
+    alert('A form was submitted: ' + JSON.stringify(this.state.pesquisa));
 
-    console.log(db_request);
+    const token = "9wVPPGqdUt6LoZeuVEvci5hrEzKQjdj4EQTTBW9-zjWi3GKp4bCW26aByLytH4MG"
+
+    console.log(token)
+
+    // const db_request = axios.post('http://api.genius.com/search?q=', 
+    // JSON.stringify(this.state.pesquisa),
+    // {
+    //   headers: {
+    //     'Authorization': `Bearer ${token}` 
+    //   }
+    // } ).then((response) => console.log(response))
+    // .catch((error) => console.log(error));
+
+    // console.log(db_request);
     event.preventDefault();
-    onSearch(this.state.searchTerm);
-  };
+    // onSearch(this.state.searchTerm);
+  }
 
-  return (
-    <form onSubmit={handleSubmit}>
-      <input className='barra-pesquisa input'
-        type="text"
-        id="texto"
-        name="texto"
-        value={this.state.searchTerm}
-        onChange={handleChange}
-        placeholder="Pesquisar..."
-      />
-      <button className='barra-pesquisa button' type="submit" value="Submit">Buscar</button>
-    </form>
-  );
+  render(){
+    return (
+    <div>
+      <Header />
+      <div className='barra-container'>
+        <h1>O que você gostaria de cantar?</h1>
+        <div className='barra-pesquisa'>          
+          <form onSubmit={this.handleSubmit}>
+            <input className={this.state.pesquisa !== "" ? "has-val input" : "input"}
+              type="text"
+              id="pesquisa"
+              name="pesquisa"
+              value={this.state.pesquisa}
+              onChange={this.handleChange}
+            />
+            <button   type="submit" value="Submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    );
+  }
 };
 
 export default BarraPesquisa;

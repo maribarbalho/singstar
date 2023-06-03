@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const mysql = require('mysql');
 
 const app = express();
-const port = 4000;
+const port = 4002;
 const axios = require("axios");
 usuarios = {};
 contador = 0;
@@ -13,8 +13,8 @@ app.use(bodyParser.json());
 
 const connection = mysql.createConnection({
     host: 'localhost',
-    user: 'root',
-    password: 'password',
+    user: 'giovanna',
+    password: 'Banana&Avela77',
     database: 'singstar'
 });
 
