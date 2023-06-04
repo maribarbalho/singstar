@@ -1,8 +1,10 @@
 const express = require('express');
+const cors = require('cors');
 const bodyParser = require('body-parser');
 const mysql = require('mysql');
 
 const app = express();
+app.use(cors());
 const port = 3002;
 const usuarios = {};
 const observacoesPorLembreteId = {}
@@ -59,21 +61,8 @@ app.get('/usuarios', (req, res) => {
   res.send(usuarios);
 });
 
-//add new user
-// app.post('/cadastro',(req, res) => {
-//   let data = {nome: req.body.nome, email: req.body.email, senha: req.body.senha};
-//   let sql = "INSERT INTO usuarios SET ?";
-//   connection.query(sql, data,(err, result) => {
-//     if (err) {
-//       console.error(err);
-//       res.status(500).send('Erro ao cadastrar usuário.');
-//     } else {
-//       console.log('Usuário cadastrado com sucesso.');
-//       res.send('Cadastro realizado com sucesso.');
-//     }
-//   });
-// });
 
+//add new user
 app.post('/cadastro', (req, res) => {
   
   //  gambiarra pra transformar em json
@@ -91,7 +80,7 @@ app.post('/cadastro', (req, res) => {
       res.status(500).send('Erro ao cadastrar usuário.');
     } else {
       console.log('Usuário cadastrado com sucesso.');
-      res.send('Cadastro realizado com sucesso.');
+      res.status(201).send('Cadastro realizado com sucesso.');
     }
   });
 });

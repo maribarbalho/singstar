@@ -1,8 +1,10 @@
 const express = require('express');
+const cors = require('cors');
 const bodyParser = require('body-parser');
 const mysql = require('mysql');
 
 const app = express();
+app.use(cors());
 const port = 4002;
 const axios = require("axios");
 usuarios = {};
@@ -68,37 +70,16 @@ app.post('/login', (req, res) => {
   const sql = `SELECT * FROM usuarios WHERE email = '${form.email}' AND senha = '${form.senha}' `;
 
   connection.query(sql, (error, results, fields) => {
-    // console.log(results)
-    // console.log(fields)
-    res.send('ok')
+
     if (error) throw error;
     if (results.length > 0) {
       console.log("Login realizado")
+      res.status(200).send("Login realizado");
     }else {
-      // req.session.loggedin = true;
-      // req.session.email = email;
-      // alert('Login realizado ' + form.email);
-      console.log("Erro, senha ou email errados")
-      // res.redirect('/home');
+      console.log("Erro: senha ou email errados")
+      res.status(403).send("Erro: senha ou email errados");
     }
-    // If there is an issue with the query, output the error
-    //results tem as linhas
-    //fields tem meta dados sobre os resultados, caso estejam disponível
-    
-    // if (error) throw error;
-    // // If the account exists
-    // if (results.length > 0) {
-    //   // Authenticate the user
-    //   request.session.loggedin = true;
-    //   request.session.email = email;
-    //   alert('Login realizado ' + form.email);
-    //   console.log("Login realizado")
-    //   // Redirect to home page
-    //   // response.redirect('/home');
-    // } else {
-    //   response.send('Incorrect Email and/or Password!');
-    // }			
-    // response.end();
+ 
   });
 });
 
