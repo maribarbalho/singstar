@@ -3,6 +3,7 @@ import './BarraPesquisa.css';
 import axios from 'axios';
 import './App.css';
 import Header from './components/Header.js';
+const fetch = require("node-fetch");
 class BarraPesquisa extends React.Component{
 
   constructor(props){
@@ -11,7 +12,7 @@ class BarraPesquisa extends React.Component{
       pesquisa: null
     }
   }
-
+  	
 
   // this.state = {
   //   searchTerm: null
@@ -23,27 +24,26 @@ class BarraPesquisa extends React.Component{
 
   
   handleSubmit = (event) => {
-    
-    alert('A form was submitted: ' + JSON.stringify(this.state.pesquisa));
-
-    const token = "9wVPPGqdUt6LoZeuVEvci5hrEzKQjdj4EQTTBW9-zjWi3GKp4bCW26aByLytH4MG"
-
-    console.log(token)
-
-    // const db_request = axios.post('http://api.genius.com/search?q=', 
-    // JSON.stringify(this.state.pesquisa),
-    // {
-    //   headers: {
-    //     'Authorization': `Bearer ${token}` 
-    //   }
-    // } ).then((response) => console.log(response))
-    // .catch((error) => console.log(error));
-
-    // console.log(db_request);
+    this.searchMusixmatch();
     event.preventDefault();
-    // onSearch(this.state.searchTerm);
   }
 
+  searchMusixmatch = async () => {
+    axios.get('https://api.musixmatch.com/ws/1.1/track.search?q=${this.state.pesquisa}&apikey=bd42c6400b7e16099ab400e78fbb08b0')
+      .then(res => {
+        const headerDate = res.headers && res.headers.date ? res.headers.date : 'no response date';
+        console.log('Status Code:', res.status);
+        console.log('Date in Response header:', headerDate);
+      
+        const users = res.data;
+      
+      })
+      .catch(err => {
+        console.log('Error: ', err.message);
+      })
+    }
+
+  
   render(){
     return (
     <div>
