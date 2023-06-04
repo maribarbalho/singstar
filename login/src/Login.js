@@ -3,13 +3,9 @@ import '@fortawesome/fontawesome-free/css/all.css'
 import React from "react"
 
 import logoIMG from "./assets/logo.svg";
-import { useNavigate, BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-
 
 
 import "./index.css";
-// const [email, setEmail] = useState("");
-// const [senha, setSenha] = useState("");
 import axios from 'axios';
 
 const api = axios.create({
@@ -30,16 +26,20 @@ class Login extends React.Component{
     this.setState({[event.target.name]: event.target.value});
   }
   
-  handleSubmit = (event) => {
-    alert('Login realizado com sucesso!');
-    // alert('A form was submitted: ' + JSON.stringify(this.state));
-
-    const login = api.post('/login', JSON.stringify(this.state) ).then((response) => console.log(response))
-    .catch((error) => console.log(error));
-
+  handleSubmit = async (event) => {
     event.preventDefault();
+
+    try{
+      const response = await axios.post('http://localhost:4002/login', JSON.stringify(this.state))
+      alert(response.data)
+      
+    }catch(err){
+      alert(err.response.data)
+    }
+   
     
   }
+
   render(){
     return(
 

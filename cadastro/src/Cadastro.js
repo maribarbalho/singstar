@@ -24,17 +24,18 @@ class Cadastro extends React.Component{
   handleChange = (event) => {
     this.setState({[event.target.name]: event.target.value});
   }
-  handleSubmit = (event) => {
-
-    // alert('A form was submitted: ' + JSON.stringify(this.state));
-    alert('Cadastro realizado com sucesso!');
-
-    const db_request = api.post('/cadastro', JSON.stringify(this.state) ).then((response) => console.log(response))
-    .catch((error) => console.log(error));
-
-    console.log(db_request);
+  handleSubmit = async(event) => {
     event.preventDefault();
-    
+    // alert('A form was submitted: ' + JSON.stringify(this.state));
+    try{
+
+      const response = await api.post('/cadastro', JSON.stringify(this.state) )
+      alert(response.data)
+      
+    }catch(err){
+      alert(err.response.data)
+    }
+   
   }
   render(){
     return(
