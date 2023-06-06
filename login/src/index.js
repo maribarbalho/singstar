@@ -41,7 +41,7 @@ class App extends React.Component{
     return(
       <Router>
         <Routes>
-          <Route exact path='/' element={<Login/>}/>
+          <Route exact path='http://localhost:3000/cadastro'/>
           <Route exact path="/tela-que-deseja-chamar" element={<telaQueDesejaChamar/>} />
         </Routes>
       </Router>  

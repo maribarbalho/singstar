@@ -1,0 +1,313 @@
+{
+    "message": {
+      "header": {
+        "status_code": 200,
+        "execute_time": 0.11093306541443,
+        "available": 361
+      },
+      "body": {
+        "track_list": [
+          {
+            "track": {
+              "track_id": 19130472,
+              "track_name": "Put the Mic Down",
+              "track_name_translation_list": [],
+              "track_rating": 1,
+              "commontrack_id": 11040178,
+              "instrumental": 0,
+              "explicit": 0,
+              "has_lyrics": 0,
+              "has_subtitles": 0,
+              "has_richsync": 0,
+              "num_favourite": 0,
+              "album_id": 14224799,
+              "album_name": "Jon Connor",
+              "artist_id": 13954396,
+              "artist_name": "DJ Kay Slay feat. Fred The Godson, Jon Connor, Kendrick Lamar & Jay Rock",
+              "track_share_url": "https://www.musixmatch.com/lyrics/DJ-Kay-Slay-feat-Fred-The-Godson-Jon-Connor-Kendrick-Lamar-Jay-Rock/Put-the-Mic-Down?utm_source=application&utm_campaign=api&utm_medium=Singstar%3A1409623458704",
+              "track_edit_url": "https://www.musixmatch.com/lyrics/DJ-Kay-Slay-feat-Fred-The-Godson-Jon-Connor-Kendrick-Lamar-Jay-Rock/Put-the-Mic-Down/edit?utm_source=application&utm_campaign=api&utm_medium=Singstar%3A1409623458704",
+              "restricted": 0,
+              "updated_time": "2012-07-03T02:33:45Z",
+              "primary_genres": {
+                "music_genre_list": []
+              }
+            }
+          },
+          {
+            "track": {
+              "track_id": 68261971,
+              "track_name": "How Many Drinks? (In the Style of Miguel & Kendrick Lamar) [Karaoke Version]",
+              "track_name_translation_list": [],
+              "track_rating": 1,
+              "commontrack_id": 36663307,
+              "instrumental": 0,
+              "explicit": 1,
+              "has_lyrics": 1,
+              "has_subtitles": 0,
+              "has_richsync": 0,
+              "num_favourite": 0,
+              "album_id": 18990718,
+              "album_name": "How Many Drinks? (In the Style of Miguel & Kendrick Lamar) [Karaoke Version]",
+              "artist_id": 26462471,
+              "artist_name": "Metro Karaoke Singles",
+              "track_share_url": "https://www.musixmatch.com/lyrics/Metro-Karaoke-Singles/How-Many-Drinks-In-the-Style-of-Miguel-Kendrick-Lamar-Karaoke-Version?utm_source=application&utm_campaign=api&utm_medium=Singstar%3A1409623458704",
+              "track_edit_url": "https://www.musixmatch.com/lyrics/Metro-Karaoke-Singles/How-Many-Drinks-In-the-Style-of-Miguel-Kendrick-Lamar-Karaoke-Version/edit?utm_source=application&utm_campaign=api&utm_medium=Singstar%3A1409623458704",
+              "restricted": 0,
+              "updated_time": "2015-02-23T02:14:14Z",
+              "primary_genres": {
+                "music_genre_list": [
+                  {
+                    "music_genre": {
+                      "music_genre_id": 52,
+                      "music_genre_parent_id": 34,
+                      "music_genre_name": "Karaoke",
+                      "music_genre_name_extended": "Karaoke",
+                      "music_genre_vanity": "Karaoke"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "track": {
+              "track_id": 84680817,
+              "track_name": "East 2Da Westside (feat. Cory Gunz)",
+              "track_name_translation_list": [],
+              "track_rating": 1,
+              "commontrack_id": 47629057,
+              "instrumental": 0,
+              "explicit": 0,
+              "has_lyrics": 0,
+              "has_subtitles": 0,
+              "has_richsync": 0,
+              "num_favourite": 0,
+              "album_id": 20921853,
+              "album_name": "Black Hippy 2",
+              "artist_id": 28955716,
+              "artist_name": "Kendrick Lamar, Ab-Soul, Jay Rock, Schoolboy Q, Black Hippy & Cory Gunz",
+              "track_share_url": "https://www.musixmatch.com/lyrics/Kendrick-Lamar-Ab-Soul-Jay-Rock-Schoolboy-Q-Black-Hippy-Cory-Gunz/East-2Da-Westside-feat-Cory-Gunz?utm_source=application&utm_campaign=api&utm_medium=Singstar%3A1409623458704",
+              "track_edit_url": "https://www.musixmatch.com/lyrics/Kendrick-Lamar-Ab-Soul-Jay-Rock-Schoolboy-Q-Black-Hippy-Cory-Gunz/East-2Da-Westside-feat-Cory-Gunz/edit?utm_source=application&utm_campaign=api&utm_medium=Singstar%3A1409623458704",
+              "restricted": 0,
+              "updated_time": "2015-12-11T01:56:54Z",
+              "primary_genres": {
+                "music_genre_list": []
+              }
+            }
+          },
+          {
+            "track": {
+              "track_id": 84801655,
+              "track_name": "Can't Quit (Kendrick Lamar)",
+              "track_name_translation_list": [],
+              "track_rating": 1,
+              "commontrack_id": 47708550,
+              "instrumental": 0,
+              "explicit": 0,
+              "has_lyrics": 0,
+              "has_subtitles": 0,
+              "has_richsync": 0,
+              "num_favourite": 0,
+              "album_id": 20930289,
+              "album_name": "No Way Out 3: Exclusive Instrumental Series",
+              "artist_id": 24765018,
+              "artist_name": "A Plus",
+              "track_share_url": "https://www.musixmatch.com/lyrics/A-Plus/Can-t-Quit-Kendrick-Lamar?utm_source=application&utm_campaign=api&utm_medium=Singstar%3A1409623458704",
+              "track_edit_url": "https://www.musixmatch.com/lyrics/A-Plus/Can-t-Quit-Kendrick-Lamar/edit?utm_source=application&utm_campaign=api&utm_medium=Singstar%3A1409623458704",
+              "restricted": 0,
+              "updated_time": "2015-12-11T12:30:38Z",
+              "primary_genres": {
+                "music_genre_list": [
+                  {
+                    "music_genre": {
+                      "music_genre_id": 53,
+                      "music_genre_parent_id": 34,
+                      "music_genre_name": "Instrumental",
+                      "music_genre_name_extended": "Instrumental",
+                      "music_genre_vanity": "Instrumental"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "track": {
+              "track_id": 91007693,
+              "track_name": "Forbidden Fruit (Originally Performed by J. Cole & Kendrick Lamar) [Karaoke Version]",
+              "track_name_translation_list": [],
+              "track_rating": 1,
+              "commontrack_id": 50722276,
+              "instrumental": 0,
+              "explicit": 0,
+              "has_lyrics": 0,
+              "has_subtitles": 0,
+              "has_richsync": 0,
+              "num_favourite": 0,
+              "album_id": 21319825,
+              "album_name": "Choice Cuts Vol. 4",
+              "artist_id": 54011,
+              "artist_name": "Genero",
+              "track_share_url": "https://www.musixmatch.com/lyrics/Genero/Forbidden-Fruit-Originally-Performed-by-J-Cole-Kendrick-Lamar-Karaoke-Version?utm_source=application&utm_campaign=api&utm_medium=Singstar%3A1409623458704",
+              "track_edit_url": "https://www.musixmatch.com/lyrics/Genero/Forbidden-Fruit-Originally-Performed-by-J-Cole-Kendrick-Lamar-Karaoke-Version/edit?utm_source=application&utm_campaign=api&utm_medium=Singstar%3A1409623458704",
+              "restricted": 0,
+              "updated_time": "2016-01-06T05:37:29Z",
+              "primary_genres": {
+                "music_genre_list": [
+                  {
+                    "music_genre": {
+                      "music_genre_id": 52,
+                      "music_genre_parent_id": 34,
+                      "music_genre_name": "Karaoke",
+                      "music_genre_name_extended": "Karaoke",
+                      "music_genre_vanity": "Karaoke"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "track": {
+              "track_id": 91975870,
+              "track_name": "Let Us Move On (Tribute to Dido & Kendrick Lamar)",
+              "track_name_translation_list": [],
+              "track_rating": 1,
+              "commontrack_id": 51201724,
+              "instrumental": 0,
+              "explicit": 0,
+              "has_lyrics": 0,
+              "has_subtitles": 0,
+              "has_richsync": 0,
+              "num_favourite": 0,
+              "album_id": 21389537,
+              "album_name": "Let Us Move On (Tribute to Dido & Kendrick Lamar)",
+              "artist_id": 26521421,
+              "artist_name": "Live Airplay",
+              "track_share_url": "https://www.musixmatch.com/lyrics/Live-Airplay/Let-Us-Move-On-Tribute-to-Dido-Kendrick-Lamar?utm_source=application&utm_campaign=api&utm_medium=Singstar%3A1409623458704",
+              "track_edit_url": "https://www.musixmatch.com/lyrics/Live-Airplay/Let-Us-Move-On-Tribute-to-Dido-Kendrick-Lamar/edit?utm_source=application&utm_campaign=api&utm_medium=Singstar%3A1409623458704",
+              "restricted": 0,
+              "updated_time": "2016-01-10T19:48:47Z",
+              "primary_genres": {
+                "music_genre_list": []
+              }
+            }
+          },
+          {
+            "track": {
+              "track_id": 146509969,
+              "track_name": "King's Dead (Tribute to Jay Rock & Kendrick Lamar)",
+              "track_name_translation_list": [],
+              "track_rating": 1,
+              "commontrack_id": 81383334,
+              "instrumental": 0,
+              "explicit": 0,
+              "has_lyrics": 0,
+              "has_subtitles": 0,
+              "has_richsync": 0,
+              "num_favourite": 0,
+              "album_id": 28284446,
+              "album_name": "King's Dead (Tribute to Jay Rock & Kendrick Lamar)",
+              "artist_id": 24983039,
+              "artist_name": "Grant Richards",
+              "track_share_url": "https://www.musixmatch.com/lyrics/Grant-Richards/King-s-Dead-Tribute-to-Jay-Rock-Kendrick-Lamar?utm_source=application&utm_campaign=api&utm_medium=Singstar%3A1409623458704",
+              "track_edit_url": "https://www.musixmatch.com/lyrics/Grant-Richards/King-s-Dead-Tribute-to-Jay-Rock-Kendrick-Lamar/edit?utm_source=application&utm_campaign=api&utm_medium=Singstar%3A1409623458704",
+              "restricted": 0,
+              "updated_time": "2018-03-02T21:36:57Z",
+              "primary_genres": {
+                "music_genre_list": []
+              }
+            }
+          },
+          {
+            "track": {
+              "track_id": 136811363,
+              "track_name": "Kendrick Lamar &amp; Rihanna-Loyalty",
+              "track_name_translation_list": [],
+              "track_rating": 21,
+              "commontrack_id": 75763993,
+              "instrumental": 0,
+              "explicit": 0,
+              "has_lyrics": 0,
+              "has_subtitles": 0,
+              "has_richsync": 0,
+              "num_favourite": 0,
+              "album_id": 26952667,
+              "album_name": "Passion Of R&B 120",
+              "artist_id": 33830721,
+              "artist_name": "DJ Triple Exe",
+              "track_share_url": "https://www.musixmatch.com/lyrics/DJ-Triple-Exe/Kendrick-Lamar-amp-Rihanna-Loyalty?utm_source=application&utm_campaign=api&utm_medium=Singstar%3A1409623458704",
+              "track_edit_url": "https://www.musixmatch.com/lyrics/DJ-Triple-Exe/Kendrick-Lamar-amp-Rihanna-Loyalty/edit?utm_source=application&utm_campaign=api&utm_medium=Singstar%3A1409623458704",
+              "restricted": 0,
+              "updated_time": "2017-09-16T21:27:15Z",
+              "primary_genres": {
+                "music_genre_list": []
+              }
+            }
+          },
+          {
+            "track": {
+              "track_id": 74382177,
+              "track_name": "Fuckin Problems (In the Style of a$AP Rocky, Kendrick Lamar, 2 Chainz & Drake) [Instrumental Version]",
+              "track_name_translation_list": [],
+              "track_rating": 1,
+              "commontrack_id": 40857597,
+              "instrumental": 1,
+              "explicit": 0,
+              "has_lyrics": 0,
+              "has_subtitles": 0,
+              "has_richsync": 0,
+              "num_favourite": 0,
+              "album_id": 19720282,
+              "album_name": "Yung Lean",
+              "artist_id": 27736397,
+              "artist_name": "Soulja King",
+              "track_share_url": "https://www.musixmatch.com/lyrics/Soulja-King-2/Fuckin-Problems-In-the-Style-of-a-AP-Rocky-Kendrick-Lamar-2-Chainz-Drake-Instrumental-Version?utm_source=application&utm_campaign=api&utm_medium=Singstar%3A1409623458704",
+              "track_edit_url": "https://www.musixmatch.com/lyrics/Soulja-King-2/Fuckin-Problems-In-the-Style-of-a-AP-Rocky-Kendrick-Lamar-2-Chainz-Drake-Instrumental-Version/edit?utm_source=application&utm_campaign=api&utm_medium=Singstar%3A1409623458704",
+              "restricted": 0,
+              "updated_time": "2015-06-22T22:40:58Z",
+              "primary_genres": {
+                "music_genre_list": [
+                  {
+                    "music_genre": {
+                      "music_genre_id": 18,
+                      "music_genre_parent_id": 34,
+                      "music_genre_name": "Hip Hop/Rap",
+                      "music_genre_name_extended": "Hip-Hop/Rap",
+                      "music_genre_vanity": "Hip-Hop-Rap"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "track": {
+              "track_id": 94727448,
+              "track_name": "Swimming Pool Full of Liquor (Drank) - Kendrick Lamar",
+              "track_name_translation_list": [],
+              "track_rating": 1,
+              "commontrack_id": 52419928,
+              "instrumental": 0,
+              "explicit": 0,
+              "has_lyrics": 0,
+              "has_subtitles": 0,
+              "has_richsync": 0,
+              "num_favourite": 0,
+              "album_id": 21592050,
+              "album_name": "100 Hip-Hop Hits, Vol. 1",
+              "artist_id": 27163416,
+              "artist_name": "Top 100 Hits",
+              "track_share_url": "https://www.musixmatch.com/lyrics/Top-100-Hits/Swimming-Pool-Full-of-Liquor-Drank-Kendrick-Lamar?utm_source=application&utm_campaign=api&utm_medium=Singstar%3A1409623458704",
+              "track_edit_url": "https://www.musixmatch.com/lyrics/Top-100-Hits/Swimming-Pool-Full-of-Liquor-Drank-Kendrick-Lamar/edit?utm_source=application&utm_campaign=api&utm_medium=Singstar%3A1409623458704",
+              "restricted": 0,
+              "updated_time": "2016-01-19T01:27:37Z",
+              "primary_genres": {
+                "music_genre_list": []
+              }
+            }
+          }
+        ]
+      }
+    }
+  }

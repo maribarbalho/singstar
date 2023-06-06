@@ -11,15 +11,15 @@ export default function App() {
     const lyrics = useAtomValue(lyricsAtom);
 
     const renderedChild =
-        lyrics === "" ? (
-            <microphoneInput />
-        ) : (
+        // lyrics === "" ? (
+        //     <microphoneInput />
+        // ) : (
             <>
                 <NomeMusica />
                 <CorpoLetra />
                 <MusicaRateInput />
             </>
-        );
+        // );
 
     return (
         <main className="w-full h-full px-10 flex flex-col justify-center items-center">

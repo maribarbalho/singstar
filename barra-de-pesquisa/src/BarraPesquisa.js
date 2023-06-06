@@ -3,69 +3,81 @@ import './BarraPesquisa.css';
 import axios from 'axios';
 import './App.css';
 import Header from './components/Header.js';
-const fetch = require("node-fetch");
-class BarraPesquisa extends React.Component{
+import Data from "./assets/Data.json";
 
-  constructor(props){
-    super(props)
-    this.state = {
-      pesquisa: null
-    }
-  }
-  	
 
-  // this.state = {
-  //   searchTerm: null
-  // }
-
-  handleChange = (event) => {
-    this.setState({[event.target.name]: event.target.value});
-  };
+export default function BarraPesquisa(){
+  const [tracks, setTracks] = useState([])
 
   
-  handleSubmit = (event) => {
-    this.searchMusixmatch();
+  const handleSubmit = async(event) => {
     event.preventDefault();
+    try{
+      
+      const url = `https://api.musixmatch.com/ws/1.1/track.search?q=${tracks}&apikey=d27f868b079feacd18d705fcffee8a59`
+      const response = await axios.get(url)
+      const query = response.data.message.body.track_list
+      // alert(JSON.stringify(query))
+      setTracks(JSON.stringify(query));
+      alert(JSON.stringify(query))
+
+    }catch(err){
+      alert(err)
+    }
+  }
+  function GetList(){
+    return(
+      <div>  
+        <ul>
+        {
+          Data.map((music) => (
+            <li  className="box" key={music}>
+            {music.track.track_id}
+            {music}
+            </li>
+          ))
+        }
+      </ul>
+      </div>
+    )
   }
 
-  searchMusixmatch = async () => {
-    axios.get('https://api.musixmatch.com/ws/1.1/track.search?q=${this.state.pesquisa}&apikey=bd42c6400b7e16099ab400e78fbb08b0')
-      .then(res => {
-        const headerDate = res.headers && res.headers.date ? res.headers.date : 'no response date';
-        console.log('Status Code:', res.status);
-        console.log('Date in Response header:', headerDate);
-      
-        const users = res.data;
-      
-      })
-      .catch(err => {
-        console.log('Error: ', err.message);
-      })
-    }
-
   
-  render(){
-    return (
+  
+  return (
     <div>
       <Header />
       <div className='barra-container'>
         <h1>O que você gostaria de cantar?</h1>
         <div className='barra-pesquisa'>          
-          <form onSubmit={this.handleSubmit}>
-            <input className={this.state.pesquisa !== "" ? "has-val input" : "input"}
+          <form>
+            <input
               type="text"
               id="pesquisa"
               name="pesquisa"
-              value={this.state.pesquisa}
-              onChange={this.handleChange}
+              placeholder='kendrick lamar'
+              onChange={event => setTracks(event.target.value)}
             />
             <button   type="submit" value="Submit">Buscar</button>
           </form>
         </div>
+        <div>  
+          <ul>
+            {
+              Data.message.body.track_list.map((music) => (
+                <li  className="box" key={music.track_id}>
+                <a>
+                {music.track.track_name} -
+                {music.track.artist_name}</a>
+                </li>
+              ))
+            }
+          </ul>
+        </div>
+        
+        
       </div>
-    </div>
-    );
-  }
-};
+    </div>  
+  );
+}
 
-export default BarraPesquisa;
