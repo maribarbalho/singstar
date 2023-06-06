@@ -7,9 +7,10 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "acrcloud": "^1.4.0",
+    "axios": "^1.4.0",
     "formidable": "^2.1.1",
     "formidable-serverless": "^1.1.1",
-    "jotai": "^2.1.0",
+    "jotai": "^2.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-feather": "^2.0.10",
@@ -41,5 +42,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/formidable": "^2.0.6",
+    "@vercel/node": "^2.14.5"
   }
 }
