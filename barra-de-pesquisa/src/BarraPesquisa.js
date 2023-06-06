@@ -50,7 +50,7 @@ export default function BarraPesquisa(){
       <div className='barra-container'>
         <h1>O que você gostaria de cantar?</h1>
         <div className='barra-pesquisa'>          
-          <form>
+          <form onSubmit={handleSubmit}>
             <input
               type="text"
               id="pesquisa"
