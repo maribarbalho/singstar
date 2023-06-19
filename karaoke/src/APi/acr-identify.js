@@ -3,9 +3,9 @@ const acrcloud = require("acrcloud");
 const formidable = require("formidable-serverless");
 
 const acr = new acrcloud({
-    host: process.env.ACR_HOST,
-    access_key: process.env.ACR_ACCESS_KEY,
-    access_secret: process.env.ACR_SECRET,
+    host: "identify-eu-west-1.acrcloud.com",
+    access_key: "d05eec94ef0928f7d843f1c3c0d1e88b",
+    access_secret:"Xvgc8ktnhTHNWBo5sXUtpeA27Xclj0Yyn5AviIRy",
     data_type: "audio",
 });
 

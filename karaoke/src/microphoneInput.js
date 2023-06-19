@@ -21,10 +21,10 @@ export default function MicrophoneInput() {
   const [progressHeight, setProgressHeight] = useState(100)
 
   const updateProgress = () => {
-    // elapsed time / duration
+    // tempo decorrido/ duração
     const recorded = Math.max(0, endTime - Date.now()) / RECORD_DURATION
 
-    // Reset the height to full when completed
+    // Reset a height para total quando concluído
     setProgressHeight(recorded === 0 ? 100 : recorded * 100)
     window.requestAnimationFrame(updateProgress)
   }
@@ -34,11 +34,11 @@ export default function MicrophoneInput() {
       return
     }
 
-    // Clear the error when recording again
+    // Limpe o erro ao gravar novamente
     setError("")
     await startRecording()
 
-    // Trigger the animation to start
+    // Acionar a animação para iniciar
     setEndTime(Date.now() + RECORD_DURATION)
 
     await new Promise(resolve => {

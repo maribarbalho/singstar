@@ -3,7 +3,7 @@ const axios = require("axios");
 const BASE_URL = "https://api.musixmatch.com/ws/1.1/";
 
 const baseParams = {
-    apikey: process.env.MUSIXMATCH_API_KEY,
+    apikey: "bd42c6400b7e16099ab400e78fbb08b0",
     format: "json",
 };
 

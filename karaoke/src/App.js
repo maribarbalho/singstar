@@ -10,6 +10,7 @@ import MensagemErro from "./mensagem-erro";
 import Bora from "./bora";
 
 export default function App() {
+    
     const lyrics = useAtomValue(lyricsAtom);
 
     const renderedChild =
