@@ -28,3 +28,5 @@ Tela inicial - Login
 Antes de executar rodar npm install e em seguida npm start.
 
 Link do projeto no YouTube: https://youtu.be/5pVnnhOZZqk
+
+Link dos slides: https://www.canva.com/design/DAFk_QoWKeo/k1ADYzM4_vdIZWh_K-8EaQ/edit?utm_content=DAFk_QoWKeo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
