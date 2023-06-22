@@ -25,8 +25,8 @@ export default function BarraPesquisa() {
       <Header />
       <div className="barra-container">
         <h1>O que você gostaria de cantar?</h1>
-        <div className="barra-pesquisa">
-          <form onSubmit={handleSubmit}>
+        <div className='barra-pesquisa'>          
+          <form>
             <input
               type="text"
               id="pesquisa"
