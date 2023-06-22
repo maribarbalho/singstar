@@ -3,81 +3,53 @@ import './BarraPesquisa.css';
 import axios from 'axios';
 import './App.css';
 import Header from './components/Header.js';
-import Data from "./assets/Data.json";
 
+export default function BarraPesquisa() {
+  const [searchTerm, setSearchTerm] = useState('');
+  const [tracks, setTracks] = useState([]);
 
-export default function BarraPesquisa(){
-  const [tracks, setTracks] = useState([])
-
-  
-  const handleSubmit = async(event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    try{
-      
-      const url = `https://api.musixmatch.com/ws/1.1/track.search?q=${tracks}&apikey=d27f868b079feacd18d705fcffee8a59`
-      const response = await axios.get(url)
-      const query = response.data.message.body.track_list
-      // alert(JSON.stringify(query))
-      setTracks(JSON.stringify(query));
-      alert(JSON.stringify(query))
-
-    }catch(err){
-      alert(err)
+    try {
+      const url = `https://api.musixmatch.com/ws/1.1/track.search?q=${searchTerm}&apikey=d27f868b079feacd18d705fcffee8a59`;
+      const response = await axios.get(url);
+      const trackList = response.data.message.body.track_list;
+      setTracks(trackList);
+    } catch (error) {
+      console.error(error);
     }
-  }
-  function GetList(){
-    return(
-      <div>  
-        <ul>
-        {
-          Data.map((music) => (
-            <li  className="box" key={music}>
-            {music.track.track_id}
-            {music}
-            </li>
-          ))
-        }
-      </ul>
-      </div>
-    )
-  }
+  };
 
-  
-  
   return (
     <div>
       <Header />
-      <div className='barra-container'>
+      <div className="barra-container">
         <h1>O que você gostaria de cantar?</h1>
-        <div className='barra-pesquisa'>          
-          <form>
+        <div className="barra-pesquisa">
+          <form onSubmit={handleSubmit}>
             <input
               type="text"
               id="pesquisa"
               name="pesquisa"
-              placeholder='kendrick lamar'
-              onChange={event => setTracks(event.target.value)}
+              placeholder="kendrick lamar"
+              value={searchTerm}
+              onChange={(event) => setSearchTerm(event.target.value)}
             />
-            <button   type="submit" value="Submit">Buscar</button>
+            <button type="submit">Buscar</button>
           </form>
         </div>
-        <div>  
+        <div>
           <ul>
-            {
-              Data.message.body.track_list.map((music) => (
-                <li  className="box" key={music.track_id}>
+            {tracks.map((track) => (
+              <li className="box" key={track.track.track_id}>
                 <a>
-                {music.track.track_name} -
-                {music.track.artist_name}</a>
-                </li>
-              ))
-            }
+                  {track.track.track_name} - {track.track.artist_name}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
-        
-        
       </div>
-    </div>  
+    </div>
   );
 }
-

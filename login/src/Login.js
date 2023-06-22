@@ -79,7 +79,8 @@ class Login extends React.Component{
               </div>
 
               <div className="container-login-form-btn">
-                <button className="login-form-btn" type="submit" value="Submit">Login</button>
+                <button className="login-form-btn" type="submit" value="Submit">
+                <a href="http://localhost:3000/">Login.</a></button>
               </div>
 
               <div className="text-center">

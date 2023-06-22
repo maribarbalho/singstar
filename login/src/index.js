@@ -32,7 +32,7 @@ class App extends React.Component{
     return(
       <div>
         <h1>Tela q vai chanarl</h1>
-        <p>Esta é a bunda inicial do seu aplicativo.</p>
+        
         <Link to="/tela-que-deseja-chamar">Chamar tela</Link>
       </div>
     )
@@ -41,8 +41,8 @@ class App extends React.Component{
     return(
       <Router>
         <Routes>
-          <Route exact path='http://localhost:3000/cadastro'/>
-          <Route exact path="/tela-que-deseja-chamar" element={<telaQueDesejaChamar/>} />
+          <Route exact path='/' element={<Login/>}/>
+          <Route exact path="/tela-que-deseja-chamar"/>
         </Routes>
       </Router>  
     )
